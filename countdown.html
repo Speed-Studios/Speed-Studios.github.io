@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href = "images/Speed Studios Logo.png" type = "image/x-icon">
+<title>
+  Speed Studios v0.1 Website
+  </title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+  <img src="images/Speed Studios Logo with Text.png" class="logo" >
+</a>
+  
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Updates
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="dev-updates.html">Development </a>
+        <a href="countdown.html">Countdown</a>
+        <a href="#Live" style="color: red;">Livestream</a>
+      </div>
+    </div>
+    <p><hr style="width: 100%;"></p> 
+  </ul>
+</header>
+<h2 id="demo"></h2>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    
+    <h2>Until IrFGeU eFsIRhTG Drops!</h2>
+</body>
+</html>
