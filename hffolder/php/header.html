@@ -1,0 +1,38 @@
+<header>
+    <a href="index.html">
+  <img src="images/Speed Studios Logo with Text.png" class="logo" >
+  </a>
+  
+  <div class="navbar" id="navbar">
+    <a href="index.html">
+      <img src="images/Speed Studios Logo2.png" class="logo2">
+    </a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About</a>
+    <div class="dropdown">
+      <button class="dropbtn">Updates
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="dev-updates.html">Development </a>
+        <a href="countdown.html">Countdown</a>
+        <a href="#Live" style="color: red;">Livestream</a>
+      </div>
+    </div>
+  </ul>
+  <script>
+   
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.fontSize = "25px";
+      } else {
+        document.getElementById("navbar").style.padding = "80px 10px";
+        document.getElementById("logo").style.fontSize = "35px";
+      }
+    }
+    </script>
+  </header>
+  
