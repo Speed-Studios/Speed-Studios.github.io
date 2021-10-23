@@ -253,3 +253,15 @@ footer {
   margin-right: auto;
 
 }
+.p2{
+  border: white solid 4px;
+  border-radius: 20px;
+  width: 1280px;
+  height: 720px;
+  margin-left: 280px;
+  margin-top: 50px;
+}
+.center{
+  margin-left:auto;
+  margin-right:auto;
+}
