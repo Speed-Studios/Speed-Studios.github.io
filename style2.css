@@ -226,7 +226,7 @@ footer {
    margin: 5px auto;
    text-align: center;
 }
-.imgint {
+.imgint1 {
   width: 130px;
   height: 195px;
   position: relative;
@@ -235,7 +235,7 @@ footer {
   margin-right: auto;
   border: black solid 2px;
 } 
-.imgint .img-top {
+.imgint1 .img-top {
   display: none;
   position: absolute;
   top: 0;
@@ -247,7 +247,7 @@ footer {
   border-radius: 25px;
   
 }
-.imgint:hover .img-top {
+.imgint1:hover .img-top {
   display: inline;
   margin-left: auto;
   margin-right: auto;
