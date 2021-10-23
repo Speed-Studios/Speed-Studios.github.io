@@ -24,7 +24,7 @@ ul {
   list-style-type:none;
   margin: 0;
   padding: 0;
-  background-color:black;
+  background-color:rgba(0, 0, 0, 0);
   overflow:hidden;
   position: sticky;
   
@@ -81,7 +81,7 @@ h2 {
   list-style-type:none;
   margin: 0;
   padding: 0;
-  background-color:black;
+  background-color:rgba(0, 0, 0, 0);
   position: absolute;
 }
 
@@ -100,7 +100,7 @@ h2 {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 800;
   font-family: 'Nunito', sans-serif;
   border: none;
@@ -113,13 +113,16 @@ h2 {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(46, 46, 46);
+  background-color: rgba(255, 255, 255, 0.849);
+  border: rgba(255, 255, 255, 0.877) solid .25px;
+  border-radius: 5px;
+  color: black;
 }
 
 .dropdown-content {
   display: none;
   position:absolute;
-  background-color: #000000;
+  background-color: #00000000;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -154,7 +157,7 @@ footer {
 .logo2 {
   width:35px;
   height:35px;
-  margin-bottom: auto;
+  margin-bottom: -10px;
   margin-top: -4px
 
 }
@@ -222,4 +225,46 @@ footer {
 .bodytext{
    margin: 5px auto;
    text-align: center;
+}
+/*.imgint{
+  background-image: url("images/Speed Studios event promo.png");
+  display: block;
+ 
+  background-size:contain;
+  border: black solid 2px;
+}
+.imgint:hover{
+  background-image: url("images/Speed Studios event promo white.png");
+  background-size:contain;
+  width: 400px;
+  height:  400px;
+  border: white solid 2px;
+  border-radius: 25px;
+}*/
+.imgint {
+  width: 130px;
+  height: 195px;
+  position: relative;
+  display: inline-block;
+  margin-left:38%;
+  margin-right: auto;
+  border: black solid 2px;
+} 
+.imgint .img-top {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  margin-left: auto;
+  margin-right: auto;
+  border: white solid 2px;
+  border-radius: 25px;
+  
+}
+.imgint:hover .img-top {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+
 }
