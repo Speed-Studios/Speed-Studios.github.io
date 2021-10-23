@@ -2,11 +2,12 @@
 <head>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="style2.css">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel = "icon" href = "images/Speed Studios Logo2.png" type = "image/x-icon">
 
 <title>
-  Speed Studios v0.1 Website
+  Speed Studios
   </title>
 </head>
 <header>
@@ -14,8 +15,10 @@
 <img src="images/Speed Studios Logo with Text.png" class="logo" >
 </a>
 
-<div class="navbar">
-  <a href="index.html">Home</a>
+<div class="navbar" id="navbar">
+  <a href="index.html">
+    <img src="images/Speed Studios Logo2.png" class="logo2">
+  </a>
   <a href="games.html">Games</a>
   <a href="about.html">About</a>
   <div class="dropdown">
@@ -28,9 +31,23 @@
       <a href="#Live" style="color: red;">Livestream</a>
     </div>
   </div>
-  <p><hr style="width: 100%;"></p> 
 </ul>
+<script>
+ 
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+      document.getElementById("navbar").style.padding = "30px 10px";
+      document.getElementById("logo").style.fontSize = "25px";
+    } else {
+      document.getElementById("navbar").style.padding = "80px 10px";
+      document.getElementById("logo").style.fontSize = "35px";
+    }
+  }
+  </script>
 </header>
+
 <body>
   <footer>
     <ul>
@@ -40,10 +57,13 @@
      <li> <a href="#steampagewhenwegetone"><i class="fab fa-steam-square fa-3x" style="color: white;"></i></a></li>
     </ul>
   </footer>
- 
-<h2 id="demo"></h2>
 
-<script>
+  <h1 style="font-size: 300%;">
+    ?? Days ?? Hours ?? Seconds
+ 
+<h1 style="font-size: 300%;" id="demo"></h1>
+
+<!--<script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
 
@@ -72,8 +92,8 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
-</script>
+</script> -->
     
-    <h2>Until IrFGeU eFsIRhTG Drops!</h2>
+    <h1 style="font-size: 300%;">Until Speed Event 202X Drops!</h1>
 </body>
 </html>
