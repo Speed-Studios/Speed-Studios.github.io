@@ -309,6 +309,9 @@ label {
       display:block;
       cursor: pointer;
       padding-top: 50px;
+      position: fixed;
+      float: right;
+      background-color: black;
 
   }
   .menu {
@@ -317,7 +320,7 @@ label {
       background-color: black;
       display: none;
       border-radius: 1px;
-      margin-top:100px
+      margin-top:100px;
       
   }
   .menu a {
