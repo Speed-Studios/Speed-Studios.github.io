@@ -231,16 +231,19 @@ footer {
   height: 195px;
   position: relative;
   display: inline-block;
-  margin: 0 auto;
+  margin: auto;
   border: black solid 2px;
+  left:39%;
+  right:auto;
 } 
 .imgint1 .img-top {
   display: none;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0px;
   z-index: 99;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   border: white solid 2px;
   border-radius: 25px;
   
