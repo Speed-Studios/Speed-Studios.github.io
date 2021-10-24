@@ -7,13 +7,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/f9d0930aa8.js" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 <link rel = "icon" href = "images/Speed Studios Logo white black bk.png" type = "image/x-icon">
 <title> Speed Studios </title>
 </head>
 <header>
-  <a href="index.html">
-<img src="images/Speed Studios Logo with Text.png" class="logo" >
-</a>
+
 
 <div class="navbar" id="navbar">
   <a href="index.html" title="Home">
@@ -49,12 +51,9 @@
 </header>
 <div class="center">
     <iframe width="1280" height="720" class="p2" src="https://www.youtube.com/embed/live_stream?channel=UCdB5famCss4cqhm-d9gU_Fw" frameborder="0" allowfullscreen></iframe></div>
-<footer>
-    <ul>
-     <li> <a href="https://instagram.com/speedstud1os"><i class="fab fa-instagram-square fa-3x" style="color: white;" ></i></a></li>
-     <li> <a href="https://www.youtube.com/channel/UCdB5famCss4cqhm-d9gU_Fw"><i class="fab fa-youtube-square fa-3x"style="color: white;"></i></a></li>
-     <li> <a href="https://twitter.com/speedstud1os"><i class="fab fa-twitter-square fa-3x"style="color: white;"></i></a></li>
-     <li> <a href="#steampagewhenwegetone"><i class="fab fa-steam-square fa-3x" style="color: white;"></i></a></li>
-    </ul>
-  </footer>
-</html>
+    <script>
+      $(function(){
+        $('#footer').load('footer.html')
+      })
+    </script>
+    <div id="footer"></div> </html>

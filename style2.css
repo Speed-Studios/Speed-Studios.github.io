@@ -66,11 +66,12 @@ h2 {
   text-align: center;
 }
 .logo {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-    height: 10%
+  display:none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+  height: 10%;
+  
     
 }
 .navbar {
@@ -157,8 +158,11 @@ footer {
 .logo2 {
   width:35px;
   height:35px;
-  margin-bottom: -10px;
-  margin-top: -4px
+  margin-bottom: -12px;
+  margin-top: -4px;
+  border: 1px white;
+  border-radius: 20px;
+  margin-left: 3px
 
 }
 #navbar {
@@ -223,22 +227,21 @@ footer {
   border-width: 2px;
 }
 .bodytext{
-   margin: 5px auto;
+   margin-left: 20px;
    text-align: center;
+   border: 2px white;
+   border-radius: 10px;
 }
 .imgint1 {
   width: 130px;
   height: 195px;
-  position: relative;
+
   display: inline-block;
-  margin: auto;
   border: black solid 2px;
   left:39%;
-  right:auto;
 } 
-.imgint1 .img-top {
-  display: none;
-  position: absolute;
+.img-top {
+  display: block;
   top: 0;
   left: 0px;
   z-index: 99;
@@ -246,12 +249,6 @@ footer {
   margin-right: auto;
   border: white solid 2px;
   border-radius: 25px;
-  
-}
-.imgint1:hover .img-top {
-  display: inline;
-  margin: 0 auto;
-
 }
 .p2{
   border: white solid 4px;
@@ -264,4 +261,98 @@ footer {
 .center{
   margin-left:auto;
   margin-right:auto;
+}
+.nav {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+}
+.menu {
+  margin: 0 30px 0 0;
+  position: fixed ;
+  background-color: black;
+  border: black 1px;
+  border-radius: 100px;
+  
+}
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+  line-height: 50px;
+  font-family: 'Nunito', sans-serif;
+  display: inline;
+}
+.menu a:hover {
+  color:black;
+    background-color: rgb(255, 255, 255);
+    border: 1px white;
+    border-radius: 10px;
+
+
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 30px;
+  line-height: 10px;
+  display: none;
+  float: right;
+}
+#toggle {
+  display: none;
+}
+
+
+@media only screen and (max-width: 615px) {
+  label {
+      display:block;
+      cursor: pointer;
+      padding-top: 50px;
+
+  }
+  .menu {
+      text-align: center;
+      width: 100%;
+      background-color: black;
+      display: none;
+      border-radius: 1px;
+      margin-top:100px
+      
+  }
+  .menu a {
+      display:block;
+      margin: 0;
+      margin-right: 100px;
+      margin-left: 100px;
+   
+  }
+  .menu a:hover {
+    color:black;
+    background-color: white;
+    border: 2px white;
+    border-radius: 10px;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  #toggle:checked + .menu{
+      display: block;
+  }
+}
+#backtop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#backtop:hover {
+  color:red;
 }

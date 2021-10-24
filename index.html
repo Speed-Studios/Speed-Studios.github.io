@@ -2,54 +2,27 @@
 <head>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="style2.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/f9d0930aa8.js" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
 <link rel = "icon" href = "images/Speed Studios Logo white black bk.png" type = "image/x-icon">
 <title> Speed Studios </title>
 </head>
-<header>
-  <a href="index.html">
-<img src="images/Speed Studios Logo with Text.png" class="logo" >
-</a>
-
-<div class="navbar" id="navbar">
-  <a href="index.html" title="Home">
-    <img src="images/Speed Studios Logo2.png" class="logo2">
-  </a>
-  <a href="games.html">Games</a>
-  <a href="about.html">About</a>
-  <div class="dropdown">
-    <button class="dropbtn">Updates
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="dev-updates.html">Development </a>
-      <a href="countdown.html">Countdown</a>
-      <a href="eventlivestream.html">Livestream</a>
-    </div>
-  </div>
-</ul>
 <script>
- 
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementById("navbar").style.padding = "60px 10px";
-      document.getElementById("logo").style.fontSize = "25px";
-    } else {
-      document.getElementById("navbar").style.padding = "80px 10px";
-      document.getElementById("logo").style.fontSize = "35px";
-    }
-  }
-  </script>
-</header>
+  $(function(){
+    $('#header').load('header.html')
+  })
+</script>
 
-
-
+<div id="header"> </div>
 <body>
 <h1 style="font-size: 300%;">Welcome.</h1>
 <br>
@@ -63,6 +36,9 @@
 <br>
 <br>
 <br>
+<p>
+  This website is still under <span style="color:red;">maintenence</span>, so please be patient with us. Thanks.
+</p>
 <br>
 <br>
 <br>
@@ -75,22 +51,37 @@
 <br>
 <br>
 <br>
-<div class="imgint1">
   <a href="speedevent.html">
- <img src="images/Speed Studios event promo.png" style="height: auto; min-height: 400px; max-height: 3px;">
  <img src="images/Speed Studios event promo white2.png" class="img-top" style="height: auto; min-height: 400px; max-height: 3px;"> </a>
 </div>
-</body>
-  
-<footer>
-  <ul>
-   <li> <a href="https://instagram.com/speedstud1os"><i class="fab fa-instagram-square fa-3x" style="color: white;" ></i></a></li>
-   <li> <a href="https://www.youtube.com/channel/UCdB5famCss4cqhm-d9gU_Fw"><i class="fab fa-youtube-square fa-3x"style="color: white;"></i></a></li>
-   <li> <a href="https://twitter.com/speedstud1os"><i class="fab fa-twitter-square fa-3x"style="color: white;"></i></a></li>
-   <li> <a href="#steampagewhenwegetone"><i class="fab fa-steam-square fa-3x" style="color: white;"></i></a></li>
-  </ul>
-  <p>
-   © Speed Studios 2021 
-  </p>
-</footer>
-  </html>
+<button onclick="topFunction()" id="backtop" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("backtop");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 10) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    </body>
+<script>
+  $(function(){
+    $('#footer').load('footer.html')
+  })
+</script>
+<div id="footer"></div>  
+</html>

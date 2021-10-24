@@ -8,50 +8,22 @@
 <link rel = "icon" href = "images/Speed Studios Logo2.png" type = "image/x-icon">
 <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
 <title>
   Speed Studios
   </title>
 </head>
-<header>
-  <a href="index.html">
-<img src="images/Speed Studios Logo with Text.png" class="logo" >
-</a>
-
-<div class="navbar" id="navbar">
-  <a href="index.html">
-    <img src="images/Speed Studios Logo2.png" class="logo2">
-  </a>
-  <a href="games.html">Games</a>
-  <a href="about.html">About</a>
-  <div class="dropdown">
-    <button class="dropbtn">Updates
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="dev-updates.html">Development </a>
-      <a href="countdown.html">Countdown</a>
-      <a href="eventlivestream.html" style="color: red;">Livestream</a>
-    </div>
-  </div>
-</ul>
 <script>
-  // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-  window.onscroll = function() {scrollFunction()};
-  
-  function scrollFunction() {
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-      document.getElementById("navbar").style.padding = "30px 10px";
-      document.getElementById("logo").style.fontSize = "25px";
-    } else {
-      document.getElementById("navbar").style.padding = "80px 10px";
-      document.getElementById("logo").style.fontSize = "35px";
-    }
-  }
+    $(function(){
+      $('#header').load('header.html')
+    })
   </script>
-</header>
-
+<div id="header"> </div>
 <body>
- 
+  
 <h1 style="font-size: 300%;">
    Speed Event Coming Soon...
 </h1>
