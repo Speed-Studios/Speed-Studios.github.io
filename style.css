@@ -32,6 +32,7 @@ ul {
 li {
   display:inline;
   float: left;
+  text-align: center;
   
 
 }
@@ -363,4 +364,10 @@ label {
 }
 #backtop:hover {
   color:red;
+}
+.buttonbox{
+  color: aqua; 
+  display: block; 
+  text-align: center;
+
 }
