@@ -381,3 +381,20 @@ label {
   display: inline-block;
   font-size: 16px;
 }
+.backtohome {
+  text-decoration: none;
+  color: aqua;
+  text-align: center;
+  font-size: larger;
+  margin-top: 50px
+}
+.logo4 {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border:aqua 2px solid;
+  border-radius: 20px;
+}
