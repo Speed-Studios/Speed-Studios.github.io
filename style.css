@@ -405,8 +405,8 @@ label {
   border: aqua 2px solid;
   border-radius: 20px;
   display: block;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 .memberbutton:hover {
   background-color: aqua;
