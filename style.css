@@ -406,8 +406,7 @@ label {
   margin-right: auto; 
   border: aqua 2px solid;
   border-radius: 20px;
-  display: inline-flex;
-  flex: 2
+  display: inline-block;
 }
 .memberbutton:hover {
   background-color: aqua;
