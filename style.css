@@ -413,3 +413,29 @@ label {
   color: black;
 
 }
+.applybutton {
+  text-align:center;
+  font-size: 30px;
+  border: white 5px solid;
+  margin-top: 100px;
+  border-radius: 15px;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+.applybutton a {
+  text-decoration: none;
+  color: white;
+}
+.applybutton a:hover {
+  color: black;
+  transition: 1s;
+
+}
+.applybutton:hover {
+  border-radius: 50px;
+  transition: 1s;
+  background-color: white;
+}
+.margintop {
+  margin-top:250px;
+}
