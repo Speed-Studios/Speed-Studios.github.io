@@ -423,6 +423,7 @@ label {
   border-radius: 15px;
   margin-left: 400px;
   margin-right: 400px;
+  transition: all 1s ease-out;
 }
 .applybutton a {
   text-decoration: none;
