@@ -403,12 +403,11 @@ label {
   text-decoration: none; 
   color: aqua; 
   font-size: 150%; 
-  margin: auto; 
+  margin-left: 850px;
+  margin-right: 850px;
   border: aqua 2px solid;
   border-radius: 20px;
-  display: block;
-  padding-left: 100px;
-  padding-right: 100px;
+  display:block;
 }
 .memberbutton:hover {
   background-color: aqua;
@@ -441,4 +440,31 @@ label {
 }
 .margintop {
   margin-top:250px;
+}
+.logo5 {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+}
+.blogpost {
+  height: 200px;
+  width: 420px;
+  border-color: white;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+}
+
+.blogpost a {
+  text-decoration: none;
+  color: aqua;
+  text-align: center;
+  margin: auto;
+  position: absolute;
 }
