@@ -358,6 +358,10 @@ label {
   h2 {
     font-size: 300%;
   }
+  ul {
+    font-size: 10px;
+    
+  }
 }
 #backtop {
   display: none;
