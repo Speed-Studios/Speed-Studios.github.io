@@ -415,8 +415,8 @@ label {
   text-decoration: none; 
   color: aqua; 
   font-size: 150%; 
-  margin-left: 850px;
-  margin-right: 850px;
+  margin-left: auto;
+  margin-right: auto;
   border: aqua 2px solid;
   border-radius: 20px;
   display:block;
