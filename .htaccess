@@ -7,3 +7,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [L]
 </IfModule>
 # END Sitepad
+AuthType Basic
+AuthName "Protected Site"
+AuthUserFile /usr/home/yourusername/.htpasswd
+require valid-user
