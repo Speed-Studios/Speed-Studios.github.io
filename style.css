@@ -417,8 +417,8 @@ label {
   border: white 5px solid;
   margin-top: 100px;
   border-radius: 20px;
-  margin-left: 600px;
-  margin-right: 600px;
+  margin-left: 400px;
+  margin-right: 400px;
   transition: all 1s ease-out;
 }
 .memberbutton a {
